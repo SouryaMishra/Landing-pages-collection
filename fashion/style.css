@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --angle: -15deg;
+  --color: #764400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffe8c8;
+  min-height: 100vh;
+  border-left: 1rem solid var(--color);
+  border-right: 1rem solid var(--color);
+  font-style: italic;
+}
+
+.container {
+  width: 1000px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 3rem;
+  color: var(--color);
+  display: inline;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  width: 70%;
+  line-height: 100%;
+  font-size: 4rem;
+  font-style: italic;
+  color: var(--color);
+}
+
+header a {
+  width: 30%;
+  line-height: 100%;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+}
+
+header a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--color);
+  transform: skewX(var(--angle));
+  z-index: -1;
+}
+
+.main-content {
+  display: grid;
+  width: 100%;
+  margin-top: 1rem;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem 4rem;
+}
+
+.sub-content {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sub-content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.sub-content p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.fashion {
+  grid-row: 1/3;
+  grid-column: 2/3;
+  grid-area: "fashion";
+}
+
+.fashion img {
+  box-shadow: 20px 20px var(--color);
+  width: 100%;
+}
+
+.clothes {
+  grid-row: 2/4;
+  grid-column: 1/2;
+  grid-area: "clothes";
+}
+
+.clothes img {
+  box-shadow: -20px -20px var(--color);
+  width: 100%;
+}
+
+.shop-now {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  grid-area: "shop";
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.shop-now a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.shop-now a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--color);
+  transform: skewX(var(--angle));
+  z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  .sub-content h1 {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .sub-content p {
+    font-size: 1.2rem;
+  }
+
+  .shop-now a {
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header a {
+    padding: 1rem;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-content div {
+    margin-bottom: 1rem;
+  }
+
+  .fashion img,
+  .clothes img {
+    box-shadow: none;
+  }
+}

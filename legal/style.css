@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: black;
+  min-height: 100vh;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 4rem 4rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.legal {
+  width: 65%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.legal .heading {
+  background: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.heading .logo {
+  font-size: 6em;
+  color: black;
+  background: white;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.heading .highlight {
+  text-align: center;
+}
+
+.highlight h1 {
+  font-size: 3.5em;
+}
+
+.highlight p {
+  font-size: 2em;
+}
+
+.law-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.law-list-item {
+  background: #404040;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.law-list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.law-list-item .law-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2.5rem;
+}
+
+.law-content h1 {
+  font-size: 2.5em;
+}
+
+.law-content p {
+  font-size: 1.5em;
+}
+
+.law-list-item .nav-logo {
+  font-size: 5em;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 35%;
+  min-height: 100%;
+}
+
+.image img {
+  max-width: 80%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding-top: 2rem;
+  }
+  .container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .legal {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .legal .heading {
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    margin: 2rem auto;
+  }
+
+  .image img {
+    width: 50%;
+    margin: 0 auto;
+    display: block; /* need to set to block, as margin auto can only work for block items to center horizontally */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .legal {
+    font-size: 0.7rem;
+  }
+}

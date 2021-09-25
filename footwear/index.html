@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <title>Footwear</title>
+  </head>
+  <body>
+    <header>
+      <a class="hamburger">
+        <i class="fas fa-bars"></i>
+      </a>
+
+      <div class="logo">
+        <i class="fas fa-shoe-prints"></i>
+      </div>
+
+      <a class="phone" href="#">
+        <i class="fas fa-phone"></i>
+      </a>
+    </header>
+
+    <section class="content">
+      <h1>Shoe are Us</h1>
+      <p>Find the right fit for you</p>
+    </section>
+
+    <section class="carousel-container">
+      <div class="carousel">
+        <div class="slide">
+          <img
+            src="./images/shoe-1.jpg"
+            alt="shoe-1"
+            data-bg="#C5031C"
+            data-id="0"
+          />
+          <h1>Performance</h1>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="slide">
+          <img
+            src="./images/shoe-2.jpg"
+            alt="shoe-2"
+            data-bg="#E9EAEC"
+            data-id="1"
+          />
+          <h1>Design</h1>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="slide">
+          <img
+            src="./images/shoe-3.jpg"
+            alt="shoe-3"
+            data-bg="#F5F6F8"
+            data-id="2"
+          />
+          <h1>Comfort</h1>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="slide">
+          <img
+            src="./images/shoe-4.jpg"
+            alt="shoe-4"
+            data-bg="#37383A"
+            data-id="3"
+          />
+          <h1>Lightweight</h1>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+      <button class="left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="progress">
+        <div class="circle active" data-id="0"></div>
+        <div class="circle" data-id="1"></div>
+        <div class="circle" data-id="2"></div>
+        <div class="circle" data-id="3"></div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

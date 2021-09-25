@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: black;
+  color: white;
+  padding-top: 2rem;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  border-bottom: 3px solid white;
+  margin-bottom: 2rem;
+}
+
+nav header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav .logo,
+nav h1 {
+  font-size: 1.5em;
+}
+
+nav button {
+  align-self: flex-end;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col {
+  text-align: center;
+}
+
+.col h2,
+.col p {
+  margin: 1rem 0;
+}
+
+p.green {
+  color: #00d695;
+}
+
+p.red {
+  color: #e75050;
+}
+
+p.orange {
+  color: #d27752;
+}
+
+.col .img-container {
+  position: relative;
+}
+
+.col a {
+  color: white;
+  text-decoration: none;
+}
+
+.col .img-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  opacity: 0.8;
+  z-index: 999;
+  cursor: pointer;
+}
+.col .img-container img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  nav header {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}

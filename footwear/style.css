@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --bg-color: #40020e;
+  --font-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #cb021c;
+  transition: background-color 0.5s ease-in-out;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  width: 95%;
+  margin: 1rem auto;
+  color: var(--font-color);
+}
+
+.hamburger {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: var(--font-color);
+}
+
+.phone {
+  color: var(--font-color);
+}
+
+.content {
+  text-align: center;
+  color: var(--font-color);
+}
+
+.content h1 {
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.content p {
+  color: var(--font-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-container {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.carousel .slide {
+  text-align: center;
+  flex: 0 0 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel .slide img {
+  height: 70%;
+  object-fit: cover;
+}
+
+.carousel .slide h1 {
+  color: var(--font-color);
+  font-size: 2rem;
+}
+
+.carousel .slide a {
+  text-decoration: none;
+  background: var(--bg-color);
+  color: var(--font-color);
+  padding: 1rem 1.5rem;
+}
+
+.carousel-container button {
+  position: absolute;
+  top: 30%;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 3rem;
+}
+
+.carousel-container button:hover {
+  background: var(--bg-color);
+  color: var(--font-color);
+}
+
+.carousel-container button.left {
+  left: 2%;
+}
+
+.carousel-container button.right {
+  right: 2%;
+}
+
+.progress {
+  width: 70px;
+  height: 0.8rem;
+  margin: 1rem auto;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--bg-color);
+  border-radius: 50%;
+}
+
+.circle.active {
+  background-color: var(--font-color);
+  transform: scale(1.25);
+}
